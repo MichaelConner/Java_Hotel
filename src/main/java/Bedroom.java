@@ -9,14 +9,16 @@ public class Bedroom {
     private int capacity;
     private String type;
     private ArrayList<Guest> guestList;
+    private int rate;
     private String surprise;
 
 
-    public Bedroom(int roomNumber, int capacity, String type, String surprise){
+    public Bedroom(int roomNumber, int capacity, String type, int rate, String surprise){
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.type = type;
         this.guestList = new ArrayList<>();
+        this.rate = rate;
         this.surprise = surprise;
     }
 
@@ -48,6 +50,11 @@ public class Bedroom {
     public ArrayList<Guest> getGuestList(){
         return this.guestList;
     }
+
+    public int getRate(){
+        return this.rate;
+    }
+
 
 
 

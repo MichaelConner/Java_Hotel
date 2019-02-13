@@ -18,7 +18,7 @@ public class HotelTest {
 
         hotel = new Hotel("Step Back Inn");
 
-        bedroom = new Bedroom(1, 2, "Double", "a wee mint");
+        bedroom = new Bedroom(1, 2, "Double", 50, "a wee mint");
 
         diningRoom = new DiningRoom("The McCrannoch Lounge", 10);
 
@@ -162,5 +162,11 @@ public class HotelTest {
         Booking testBooking = hotel.bookRoom(bedroom, 3);
         assertEquals(bedroom, testBooking.getBedroom());
         assertEquals(3, testBooking.getNights());
+    }
+
+    @Test
+    public void canPresentBill(){
+        Booking testBooking = hotel.bookRoom(bedroom, 3);
+        assertEquals(150, hotel.presentBill(testBooking));
     }
 }

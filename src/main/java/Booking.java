@@ -1,12 +1,12 @@
-import java.awt.print.Book;
-
 public class Booking {
-    Bedroom bedroom;
-    int nights;
+    private Bedroom bedroom;
+    private int nights;
+    private int totalCost;
 
     public Booking(Bedroom bedroom, int nights){
         this.bedroom = bedroom;
         this.nights = nights;
+        this.totalCost = bedroom.getRate() * nights;
     }
 
     public Bedroom getBedroom(){
@@ -15,5 +15,9 @@ public class Booking {
 
     public int getNights(){
         return this.nights;
+    }
+
+    public int getTotalCost(){
+        return this.totalCost;
     }
 }

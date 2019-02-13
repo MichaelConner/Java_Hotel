@@ -80,4 +80,7 @@ public class Hotel {
         return new Booking(bedroom, nights);
     }
 
+    public int presentBill(Booking booking){
+        return booking.getTotalCost();
+    }
 }
