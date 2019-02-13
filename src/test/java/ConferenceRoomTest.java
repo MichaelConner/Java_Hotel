@@ -7,12 +7,15 @@ public class ConferenceRoomTest {
 
 
     ConferenceRoom conferenceRoom;
+    Guest guest;
+
 
 
     @Before
     public void before(){
 
         conferenceRoom = new ConferenceRoom("The Stiletto Conference Room", 20);
+        guest = new Guest();
 
     }
 
@@ -30,5 +33,11 @@ public class ConferenceRoomTest {
     @Test
     public void hasEmptyGuestList(){
         assertEquals(0, conferenceRoom.getGuestCount());
+    }
+
+    @Test
+    public void addGuest(){
+        conferenceRoom.addGuest(guest);
+        assertEquals(1, conferenceRoom.getGuestCount());
     }
 }

@@ -9,13 +9,15 @@ public class Bedroom {
     private int capacity;
     private String type;
     private ArrayList<Guest> guestList;
+    private String surprise;
 
 
-    public Bedroom(int roomNumber, int capacity, String type){
+    public Bedroom(int roomNumber, int capacity, String type, String surprise){
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.type = type;
         this.guestList = new ArrayList<>();
+        this.surprise = surprise;
     }
 
     public int getRoomNumber(){
@@ -32,6 +34,10 @@ public class Bedroom {
 
     public int getGuestCount(){
         return this.guestList.size();
+    }
+
+    public void addGuest(Guest guest){
+        guestList.add(guest);
     }
 
 

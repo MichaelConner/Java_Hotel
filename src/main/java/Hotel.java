@@ -49,9 +49,19 @@ public class Hotel {
         return(getBedroomCount() + getDiningRoomCount() + getConferenceRoomCount());
     }
 
+   public void checkInConferenceRoom(ConferenceRoom conferenceRoom, Guest guest){
+        if (conferenceRoom.getGuestCount() < conferenceRoom.getRoomCapacity())
+        { conferenceRoom.addGuest(guest);}
+   }
 
+    public void checkInDiningRoom(DiningRoom diningRoom, Guest guest){
+        if (diningRoom.getGuestCount() < diningRoom.getRoomCapacity())
+        { diningRoom.addGuest(guest);}
+    }
 
-
-
+    public void checkInBedroom(Bedroom bedroom, Guest guest){
+        if (bedroom.getGuestCount() < bedroom.getRoomCapacity())
+        { bedroom.addGuest(guest);}
+    }
 
 }

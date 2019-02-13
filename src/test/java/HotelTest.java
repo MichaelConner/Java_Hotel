@@ -10,6 +10,7 @@ public class HotelTest {
     Bedroom bedroom;
     DiningRoom diningRoom;
     ConferenceRoom conferenceRoom;
+    Guest guest;
 
 
     @Before
@@ -17,11 +18,13 @@ public class HotelTest {
 
         hotel = new Hotel("Step Back Inn");
 
-        bedroom = new Bedroom(1, 2, "Double");
+        bedroom = new Bedroom(1, 2, "Double", "a wee mint");
 
         diningRoom = new DiningRoom("The McCrannoch Lounge", 10);
 
         conferenceRoom = new ConferenceRoom("The Stiletto Conference Room", 20);
+
+        guest = new Guest();
 
     }
 
@@ -75,5 +78,46 @@ public class HotelTest {
         assertEquals(6, hotel.getTotalRoomCount());
     }
 
+    @Test
+    public void canCheckInConferenceRoom(){
+        hotel.checkInConferenceRoom(conferenceRoom, guest);
+        assertEquals(1, conferenceRoom.getGuestCount());
+    }
 
+    @Test
+    public void cannotCheckInConferenceRoomAsFull(){
+        for (int i=0; i <25; i++) {
+            hotel.checkInConferenceRoom(conferenceRoom, guest);
+        }
+        assertEquals(20, conferenceRoom.getGuestCount());
+    }
+
+    @Test
+    public void canCheckInDiningRoom(){
+        hotel.checkInDiningRoom(diningRoom, guest);
+        assertEquals(1, diningRoom.getGuestCount());
+    }
+
+    @Test
+    public void cannotCheckInDiningRoomAsFull(){
+        for (int i=0; i <15; i++) {
+            hotel.checkInDiningRoom(diningRoom, guest);
+        }
+        assertEquals(10, diningRoom.getGuestCount());
+    }
+
+    @Test
+    public void canCheckInBedroom(){
+        hotel.checkInBedroom(bedroom, guest);
+        assertEquals(1, bedroom.getGuestCount());
+    }
+
+    @Test
+    public void cannotCheckInBedroomAsFull(){
+        for (int i=0; i <5; i++) {
+            hotel.checkInBedroom(bedroom, guest);
+        }
+        assertEquals(2, bedroom.getGuestCount());
+    }
+    
 }

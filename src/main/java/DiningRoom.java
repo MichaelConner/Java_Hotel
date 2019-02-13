@@ -27,4 +27,8 @@ public class DiningRoom {
     public int getGuestCount(){
         return this.guestList.size();
     }
+
+    public void addGuest(Guest guest){
+        guestList.add(guest);
+    }
 }

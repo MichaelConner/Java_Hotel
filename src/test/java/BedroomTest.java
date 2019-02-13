@@ -7,13 +7,15 @@ public class BedroomTest {
 
 
     Bedroom bedroom;
+    Guest guest;
 
 
     @Before
     public void before(){
 
-        bedroom = new Bedroom(1, 2, "Double");
+        bedroom = new Bedroom(1, 2, "Double", "a wee mint");
 
+        guest = new Guest();
 
     }
 
@@ -36,6 +38,12 @@ public class BedroomTest {
     @Test
     public void hasEmptyGuestList(){
         assertEquals(0, bedroom.getGuestCount());
+    }
+
+    @Test
+    public void addGuest(){
+        bedroom.addGuest(guest);
+        assertEquals(1, bedroom.getGuestCount());
     }
 
 
