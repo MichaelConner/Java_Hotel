@@ -7,7 +7,9 @@ public class BedroomTest {
 
 
     Bedroom bedroom;
-    Guest guest;
+    Guest guest1;
+    Guest guest2;
+    Guest guest3;
 
 
     @Before
@@ -15,8 +17,9 @@ public class BedroomTest {
 
         bedroom = new Bedroom(1, 2, "Double", "a wee mint");
 
-        guest = new Guest();
-
+        guest1 = new Guest();
+        guest2 = new Guest();
+        guest3 = new Guest();
     }
 
 
@@ -42,10 +45,26 @@ public class BedroomTest {
 
     @Test
     public void addGuest(){
-        bedroom.addGuest(guest);
+        bedroom.addGuest(guest1);
         assertEquals(1, bedroom.getGuestCount());
     }
+    @Test
+    public void canRemoveGuest(){
+        bedroom.addGuest(guest1);
+        bedroom.removeGuest(guest1);
+        assertEquals(0, bedroom.getGuestCount());
+    }
 
+    @Test
+    public void canRemoveSpecificGuest(){
+        bedroom.addGuest(guest1);
+        bedroom.addGuest(guest2);
+        bedroom.addGuest(guest3);
+        bedroom.removeGuest(guest2);
+        assertEquals(2, bedroom.getGuestCount());
+        assertEquals(true, bedroom.getGuestList().contains(guest1));
+        assertEquals(true, bedroom.getGuestList().contains(guest3));
+    }
 
 
 }

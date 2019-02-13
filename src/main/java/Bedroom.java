@@ -39,7 +39,15 @@ public class Bedroom {
     public void addGuest(Guest guest){
         guestList.add(guest);
     }
+    public void removeGuest(Guest guest){
+        if (this.guestList.contains(guest)){
+            this.guestList.remove(guest);
+        }
+    }
 
+    public ArrayList<Guest> getGuestList(){
+        return this.guestList;
+    }
 
 
 

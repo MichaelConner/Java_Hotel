@@ -6,7 +6,9 @@ import static org.junit.Assert.assertEquals;
 public class DiningRoomTest {
 
     DiningRoom diningRoom;
-    Guest guest;
+    Guest guest1;
+    Guest guest2;
+    Guest guest3;
 
 
     @Before
@@ -14,7 +16,9 @@ public class DiningRoomTest {
 
         diningRoom = new DiningRoom("The McCrannoch Lounge", 10);
 
-        guest = new Guest();
+        guest1 = new Guest();
+        guest2 = new Guest();
+        guest3 = new Guest();
 
     }
 
@@ -36,8 +40,25 @@ public class DiningRoomTest {
 
     @Test
     public void addGuest(){
-        diningRoom.addGuest(guest);
+        diningRoom.addGuest(guest1);
         assertEquals(1, diningRoom.getGuestCount());
+    }
+    @Test
+    public void canRemoveGuest(){
+        diningRoom.addGuest(guest1);
+        diningRoom.removeGuest(guest1);
+        assertEquals(0, diningRoom.getGuestCount());
+    }
+
+    @Test
+    public void canRemoveSpecificGuest(){
+        diningRoom.addGuest(guest1);
+        diningRoom.addGuest(guest2);
+        diningRoom.addGuest(guest3);
+        diningRoom.removeGuest(guest2);
+        assertEquals(2, diningRoom.getGuestCount());
+        assertEquals(true, diningRoom.getGuestList().contains(guest1));
+        assertEquals(true, diningRoom.getGuestList().contains(guest3));
     }
 
 }

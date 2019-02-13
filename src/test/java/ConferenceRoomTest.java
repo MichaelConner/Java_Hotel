@@ -7,15 +7,17 @@ public class ConferenceRoomTest {
 
 
     ConferenceRoom conferenceRoom;
-    Guest guest;
-
-
+    Guest guest1;
+    Guest guest2;
+    Guest guest3;
 
     @Before
     public void before(){
 
         conferenceRoom = new ConferenceRoom("The Stiletto Conference Room", 20);
-        guest = new Guest();
+        guest1 = new Guest();
+        guest2 = new Guest();
+        guest3 = new Guest();
 
     }
 
@@ -36,8 +38,26 @@ public class ConferenceRoomTest {
     }
 
     @Test
-    public void addGuest(){
-        conferenceRoom.addGuest(guest);
+    public void canAddGuest(){
+        conferenceRoom.addGuest(guest1);
         assertEquals(1, conferenceRoom.getGuestCount());
+    }
+
+    @Test
+    public void canRemoveGuest(){
+        conferenceRoom.addGuest(guest1);
+        conferenceRoom.removeGuest(guest1);
+        assertEquals(0, conferenceRoom.getGuestCount());
+    }
+
+    @Test
+    public void canRemoveSpecificGuest(){
+        conferenceRoom.addGuest(guest1);
+        conferenceRoom.addGuest(guest2);
+        conferenceRoom.addGuest(guest3);
+        conferenceRoom.removeGuest(guest2);
+        assertEquals(2, conferenceRoom.getGuestCount());
+        assertEquals(true, conferenceRoom.getGuestList().contains(guest1));
+        assertEquals(true, conferenceRoom.getGuestList().contains(guest3));
     }
 }

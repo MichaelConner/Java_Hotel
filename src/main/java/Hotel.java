@@ -64,4 +64,16 @@ public class Hotel {
         { bedroom.addGuest(guest);}
     }
 
+    public void checkOutConferenceRoom(ConferenceRoom conferenceRoom, Guest guest){
+        conferenceRoom.removeGuest(guest);
+    }
+
+    public void checkOutDiningRoom(DiningRoom diningRoom, Guest guest){
+        diningRoom.removeGuest(guest);
+    }
+
+    public void checkOutBedroom(Bedroom bedroom, Guest guest){
+        bedroom.removeGuest(guest);
+    }
+
 }
