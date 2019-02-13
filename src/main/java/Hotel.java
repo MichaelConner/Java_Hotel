@@ -83,4 +83,15 @@ public class Hotel {
     public int presentBill(Booking booking){
         return booking.getTotalCost();
     }
+
+    public ArrayList<Bedroom> getEmptyRooms(){
+        ArrayList<Bedroom> emptyRooms = new ArrayList<>();
+
+        for (Bedroom bedroom : this.bedrooms){
+            if (bedroom.getGuestCount() == 0){
+                emptyRooms.add(bedroom);
+            }
+        }
+        return emptyRooms;
+    }
 }

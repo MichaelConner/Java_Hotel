@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3960733-9709-421b-97ea-9eabd2371c25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bedroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bedroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BedroomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BedroomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,12 +40,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5811" />
+          <entry key="java" value="6290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5811" />
+          <entry key="JAVA" value="6290" />
         </counts>
       </usages-collector>
     </session>
@@ -77,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="169" column="55" selection-start-line="169" selection-start-column="55" selection-end-line="169" selection-end-column="55" />
+            <state relative-caret-position="529">
+              <caret line="184" column="46" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -86,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="597">
+              <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -95,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
+            <state relative-caret-position="255">
               <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
             </state>
           </provider>
@@ -104,44 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/DiningRoomTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DiningRoom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="61" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="600">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -459,10 +419,10 @@
         <option value="$PROJECT_DIR$/src/test/java/DiningRoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DiningRoom.java" />
         <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bedroom.java" />
         <option value="$PROJECT_DIR$/src/test/java/BookingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bedroom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel.java" />
       </list>
     </option>
@@ -529,7 +489,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550070445607" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550071582546" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -615,9 +575,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HotelTest - 2019.02.13 at 14h 13m 35s.xml">
-      <configuration name="HotelTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookingTest - 2019.02.13 at 14h 36m 07s.xml">
       <configuration name="BookingTest" configurationId="JUnit" />
     </history-entry>
@@ -644,6 +601,9 @@
     </history-entry>
     <history-entry file="BookingTest - 2019.02.13 at 14h 57m 05s.xml">
       <configuration name="BookingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotelTest - 2019.02.13 at 15h 07m 14s.xml">
+      <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -673,7 +633,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32962447" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32962447" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -737,48 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DiningRoomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DiningRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -793,17 +711,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DiningRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DiningRoomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="169" column="55" selection-start-line="169" selection-start-column="55" selection-end-line="169" selection-end-column="55" />
+        <state relative-caret-position="529">
+          <caret line="184" column="46" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="597">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>

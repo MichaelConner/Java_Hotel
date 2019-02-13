@@ -8,6 +8,9 @@ public class HotelTest {
 
     Hotel hotel;
     Bedroom bedroom;
+    Bedroom bedroom2;
+    Bedroom bedroom3;
+    Bedroom bedroom4;
     DiningRoom diningRoom;
     ConferenceRoom conferenceRoom;
     Guest guest;
@@ -19,6 +22,10 @@ public class HotelTest {
         hotel = new Hotel("Step Back Inn");
 
         bedroom = new Bedroom(1, 2, "Double", 50, "a wee mint");
+        bedroom2 = new Bedroom(1, 2, "Double", 50, "a wee mint");
+        bedroom3 = new Bedroom(1, 2, "Double", 50, "a wee mint");
+        bedroom4 = new Bedroom(1, 2, "Double", 50, "a wee mint");
+
 
         diningRoom = new DiningRoom("The McCrannoch Lounge", 10);
 
@@ -169,4 +176,14 @@ public class HotelTest {
         Booking testBooking = hotel.bookRoom(bedroom, 3);
         assertEquals(150, hotel.presentBill(testBooking));
     }
+
+    @Test
+    public void canListEmptyRooms(){
+        hotel.addBedroom(bedroom);
+        hotel.addBedroom(bedroom2);
+        hotel.addBedroom(bedroom3);
+        hotel.checkInBedroom(bedroom2, guest);
+        assertEquals(2, hotel.getEmptyRooms().size());
+    }
+
 }
